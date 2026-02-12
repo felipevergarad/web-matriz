@@ -11,7 +11,7 @@ export default function Footer() {
                     <div className="col-span-1 md:col-span-1">
                         <div className="relative h-12 w-48 mb-6">
                             <Image
-                                src="/assets/matriz_blanco.png"
+                                src="/assets/branding/matriz_blanco.svg"
                                 alt="Matriz"
                                 fill
                                 className="object-contain object-left"

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <div className="relative h-[85vh] w-full flex items-center justify-center overflow-hidden bg-black">
+        <section className="relative h-[85vh] w-full flex items-center justify-center overflow-hidden bg-black">
             {/* Background Image/Video Fallback */}
             <div
                 className="absolute inset-0 z-0 opacity-60"
@@ -18,7 +18,7 @@ export default function Hero() {
 
             {/* Content */}
             <div className="relative z-20 text-center px-4 max-w-5xl mx-auto">
-                <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight tracking-tight drop-shadow-xl uppercase">
+                <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight tracking-tight drop-shadow-xl uppercase font-sans">
                     Industrialización.<br />
                     Impacto.<br />
                     Rentabilidad.
@@ -32,18 +32,18 @@ export default function Hero() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Link
                         href="/inversionistas"
-                        className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 rounded-full font-bold uppercase tracking-wider text-sm transition-transform transform hover:scale-105 shadow-lg"
+                        className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 matriz-cut sm:matriz-cut-none font-bold uppercase tracking-wider text-sm transition-transform transform hover:scale-105 shadow-lg"
                     >
                         Ver Oportunidades
                     </Link>
                     <Link
                         href="/modelo"
-                        className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold uppercase tracking-wider text-sm transition-transform transform hover:scale-105"
+                        className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 matriz-cut sm:matriz-cut-none font-bold uppercase tracking-wider text-sm transition-transform transform hover:scale-105"
                     >
                         Conocer Modelo
                     </Link>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
